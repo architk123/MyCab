@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/coeditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp"
+        android:ems="10"
+        android:hint="Pickup Location"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/coeditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/coeditText1"
+        android:layout_below="@+id/coeditText1"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Drop Location"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coeditText2"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/cobutton1"
+        android:src="@drawable/pic1" />
+
+    <Button
+        android:id="@+id/cobutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/coeditText2"
+        android:layout_marginLeft="16dp"
+        android:text="Check" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/cbptextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbptextView1"
+        android:layout_alignBottom="@+id/cbptextView1"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/cbptextView1"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/cbptextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Hello!"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/cbptextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbptextView3"
+        android:layout_below="@+id/cbptextView3"
+        android:layout_marginTop="16dp"
+        android:text="Username"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cbptextView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbptextView4"
+        android:layout_below="@+id/cbptextView4"
+        android:layout_marginTop="16dp"
+        android:text="e-mail"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/cbpbutton3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbpbutton2"
+        android:layout_alignRight="@+id/cbpbutton2"
+        android:layout_below="@+id/cbpbutton2"
+        android:layout_marginTop="16dp"
+        android:onClick="viewDetail"
+        android:text="View cab details" />
+
+    <TextView
+        android:id="@+id/cbptextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbptextView1"
+        android:layout_below="@+id/cbptextView2"
+        android:layout_marginTop="17dp"
+        android:text="Phone number"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/cbpbutton2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbptextView5"
+        android:layout_centerVertical="true"
+        android:minWidth="170dp"
+        android:onClick="addDetail"
+        android:text="Add cab details"
+        android:width="170dp" />
+
+    <Button
+        android:id="@+id/cbppbutton1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbpbutton3"
+        android:layout_below="@+id/cbpbutton3"
+        android:layout_marginTop="21dp"
+        android:onClick="logout"
+        android:text="Logout" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cbppbutton1"
+        android:layout_alignRight="@+id/cbpbutton3"
+        android:src="@drawable/pic1" />
+
+</RelativeLayout>

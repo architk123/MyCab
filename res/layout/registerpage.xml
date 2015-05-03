@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/rpeditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rpeditText2"
+        android:layout_below="@+id/rptextView1"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+    
+    <EditText
+        android:id="@+id/rpeditText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rpeditText2"
+        android:layout_below="@+id/rpeditText2"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/rpeditText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rpeditText4"
+        android:layout_below="@+id/rpeditText4"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/rptextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rptextView1"
+        android:layout_below="@+id/rpeditText3"
+        android:layout_marginTop="30dp"
+        android:text="Your login Details:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/rpeditText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rpeditText3"
+        android:layout_below="@+id/rptextView2"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/rptextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/rpbutton1"
+        android:text="Your details"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/rpeditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rptextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="e-mail"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/rpbutton1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rpeditText5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Regsiter" 
+        android:onClick="registerName"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rpbutton1"
+        android:layout_below="@+id/rpbutton1"
+        android:src="@drawable/pic1" />
+
+</RelativeLayout>

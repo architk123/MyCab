@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/adeditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Cab Service Name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/adeditText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adeditText3"
+        android:layout_below="@+id/adeditText3"
+        android:ems="10"
+        android:hint="To Location"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/adeditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adeditText1"
+        android:layout_below="@+id/adeditText1"
+        android:ems="10"
+        android:hint="Cab Number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/adeditText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adeditText2"
+        android:layout_below="@+id/adeditText2"
+        android:ems="10"
+        android:hint="From Location"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/adbutton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adbutton1"
+        android:layout_alignRight="@+id/adbutton1"
+        android:layout_below="@+id/adbutton1"
+        android:layout_marginTop="17dp"
+        android:onClick="goBack"
+        android:text="Go back?" />
+
+    <EditText
+        android:id="@+id/adeditText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adeditText4"
+        android:layout_below="@+id/adeditText4"
+        android:ems="10"
+        android:hint="Fare"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/adeditText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adeditText5"
+        android:layout_below="@+id/adeditText5"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Contact Number"
+         />
+
+    <Button
+        android:id="@+id/adbutton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adeditText6"
+        android:layout_alignRight="@+id/adeditText6"
+        android:layout_below="@+id/adeditText6"
+        android:layout_marginTop="16dp"
+        android:onClick="addCab"
+        android:text="Add cab details" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adbutton2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pic1" />
+
+</RelativeLayout>
